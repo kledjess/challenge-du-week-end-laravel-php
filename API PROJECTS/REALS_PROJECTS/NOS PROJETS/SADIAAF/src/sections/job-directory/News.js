@@ -1,0 +1,89 @@
+import React from "react";
+import Link from "../../components/Link";
+import { Container, Row, Col } from "react-bootstrap";
+
+const News = () => (
+  <>
+    {/* <!-- News section --> */}
+    <div className="news-section pt-12 pb-8 py-lg-23 bg-default-2">
+      <Container>
+        <Row className="justify-content-center">
+          <div className="col-xl-6 col-lg-7 col-md-9">
+            <div className="section-title text-center mb-11 mb-lg-18">
+              <h2 className="title heading-color gr-text-4 mb-6">News that helps</h2>
+              <p className="gr-text-8 text-color-opacity px-lg-8 mb-0">
+                With lots of unique blocks, you can easily build a page without
+                coding. Build your next landing page.
+              </p>
+            </div>
+          </div>
+        </Row>
+        <Row
+          className="justify-content-center"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <Col md="6" lg="4">
+            <div className="location-card mb-9 gr-hover-shadow-1">
+              <Link to="/#" className="card-img">
+                <img src={"/image/job-site/jpg/news-card-img1.jpg"} alt="" className="w-100 rounded-top-10" />
+              </Link>
+              <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
+                <Link to="/#">
+                  <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                    Career
+                  </p>
+                </Link>
+                <Link to="/#">
+                  <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    How to win any job you want. Get started with 5 steps.
+                  </h3>
+                </Link>
+              </div>
+            </div>
+          </Col>
+          <Col md="6" lg="4">
+            <div className="location-card mb-9 gr-hover-shadow-1">
+              <Link to="/#" className="card-img">
+                <img src={"/image/job-site/jpg/news-card-img2.jpg"} alt="" className="w-100 rounded-top-10" />
+              </Link>
+              <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
+                <Link to="/#">
+                  <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                    Lifestyle
+                  </p>
+                </Link>
+                <Link to="/#">
+                  <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    10 ways to reduce your office work depression.
+                  </h3>
+                </Link>
+              </div>
+            </div>
+          </Col>
+          <Col md="6" lg="4">
+            <div className="location-card mb-9 gr-hover-shadow-1">
+              <Link to="/#" className="card-img">
+                <img src={"/image/job-site/jpg/news-card-img3.jpg"} alt="" className="w-100 rounded-top-10" />
+              </Link>
+              <div className="card-content px-9 py-8 bg-white rounded-bottom-10">
+                <Link to="/#">
+                  <p className="gr-text-11 mb-4 d-inline-block gr-color-blackish-blue-opacity-7">
+                    Career
+                  </p>
+                </Link>
+                <Link to="/#">
+                  <h3 className="title text-blackish-blue gr-text-7 mb-0">
+                    Why should you work as a team even on small projects.
+                  </h3>
+                </Link>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  </>
+);
+
+export default News;
